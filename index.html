@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Add Product</h1>
+
+
+    <form>
+        <label> Product Name: </label><br>
+        <input type="text" id="productNameBox"><br>
+        <span id="productNameErr"></span><br>
+
+        <label> Price: </label><br>
+        <input type="number" id="priceBox"><br>
+        <span id="priceErr"></span><br>
+
+
+        <label> Categories: </label><br>
+        <select id="selectBox">
+            <option value=""></option>
+            <option value="Drinks">Drinks</option>
+            <option value="Meat">Meat</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Basic">Basic</option>
+        </select><span id="selectErr"></span><br>
+
+        <label>Link for picture of product:</label><br>
+        <input type="url" id="pictureLinkBox"><br>
+        <span id="pictureLinkErr"></span>
+
+        <button type="button" onclick="addProduct()">Add product</button>
+    </form>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th> Price </th>
+                <th>Category </th>
+                <th> Picture </th>
+                <th>Delete Line </th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
